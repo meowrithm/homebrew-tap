@@ -5,21 +5,21 @@
 class Meowpass < Formula
   desc "The secret vault for developers. CLI-first, E2E encrypted."
   homepage "https://meowpass.dev"
-  version "0.1.4"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chpecson/meowpass-releases/releases/download/v0.1.4/meowpass_0.1.4_darwin_amd64.tar.gz"
-      sha256 "7fca41358565e4899b8d8ecc29e0bcac6f32d5a224b19a030cb9f4a970efc1b5"
+      url "https://github.com/meowrithm/meowpass-releases/releases/download/v0.2.0/meowpass_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d670ccefd9156db0de5b43fab6675821046fd37c8315882325d2fe6a05cfa766"
 
       define_method(:install) do
         bin.install "meowpass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chpecson/meowpass-releases/releases/download/v0.1.4/meowpass_0.1.4_darwin_arm64.tar.gz"
-      sha256 "dc3046f4171607b6e6ed70791540f9f8fd6fce7c6e0f6d5d49a9f40861ed3e97"
+      url "https://github.com/meowrithm/meowpass-releases/releases/download/v0.2.0/meowpass_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d942688c857ff61342d4189a264aa76b7081f012ba41d56bc84d93558cfb6684"
 
       define_method(:install) do
         bin.install "meowpass"
@@ -29,15 +29,15 @@ class Meowpass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chpecson/meowpass-releases/releases/download/v0.1.4/meowpass_0.1.4_linux_amd64.tar.gz"
-      sha256 "01afc06d32314d4786c75f8c53772c275be66582635c3df04721199e0f444156"
+      url "https://github.com/meowrithm/meowpass-releases/releases/download/v0.2.0/meowpass_0.2.0_linux_amd64.tar.gz"
+      sha256 "5a7ed4a09ba22439d931c19788efff083991b2230ecf4863079b24dbd40d8bb4"
       define_method(:install) do
         bin.install "meowpass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chpecson/meowpass-releases/releases/download/v0.1.4/meowpass_0.1.4_linux_arm64.tar.gz"
-      sha256 "8b9312268eb9de69afa78acd978c341d40ce6c42c8b77c757ccd3130c165bbe9"
+      url "https://github.com/meowrithm/meowpass-releases/releases/download/v0.2.0/meowpass_0.2.0_linux_arm64.tar.gz"
+      sha256 "c632f23146e78b2ac3e559f95cbf7e221125c6f2d2b1b32a8b59f0093d113e48"
       define_method(:install) do
         bin.install "meowpass"
       end
